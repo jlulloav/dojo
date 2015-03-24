@@ -1,0 +1,26 @@
+define("example/nls/es/CreateAccountWidget",
+({
+	invalidMessage: "El valor especificado no es válido.",
+	missingMessage: "Este valor es necesario.",
+	rangeMessage: "Este valor está fuera del intervalo.",
+	formTitle: "Registrarse - Crear Cuenta",
+	fieldMarkedWith: 'Campos marcados con',
+	areCompulsoryFields: 'son requeridos.',
+	username: 'Nombre de usuario',
+	emailId: 'Correo electrónico',
+	alternativeEmailId: 'Correo electrónico alternativo',
+	yourPhone: 'Teléfono',
+	countryCode: 'Código del país',
+	cityCode: 'Código de la Ciudad',
+	phoneNumber: 'Número de Teléfono',
+	yourPostalAddress: 'Dirección Postal',
+	country: 'País',
+	selectOne: 'Seleccionar',
+	password: 'Contraseña',
+	reEnterPassword: 'Repetir Contraseña',
+	iAcceptThe: 'Accepto los',
+	termsOfUse: 'Términos de uso',
+	lContinue: 'Continuar',
+	reset: 'Cancelar'
+})
+);
