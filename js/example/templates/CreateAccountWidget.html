@@ -1,0 +1,104 @@
+<div class="main">
+    <h3>${i18n.formTitle}</h3>
+    <p class="tip">${i18n.fieldMarkedWith} <em class="required">*</em> ${i18n.areCompulsoryFields}</p>
+    <form data-dojo-type="dijit/form/Form" method="post" action="">
+        <script type="dojo/on" data-dojo-event="submit">
+            return this.validate();
+        </script>
+        <table class="fieldset-table ${i18n.$locale}">
+            <tbody>
+                <tr>
+                    <th class="row-label"><em class="required">*</em>${i18n.username}</th>
+                    <td class="row-field">
+                        <input type="text" data-dojo-type="dijit/form/ValidationTextBox" 
+                               data-dojo-props="required:true"/>
+                    </td>
+                </tr>
+                <tr>
+                    <th class="row-label"><em class="required">*</em>${i18n.emailId}</th>
+                    <td class="row-field">
+                        <input type="text" class="input-big" data-dojo-type="dijit/form/ValidationTextBox"
+                               data-dojo-props="validator:dojox.validate.isEmailAddress,required:true"/>
+                    </td>
+                </tr>
+                <tr>
+                    <th class="row-label">${i18n.alternativeEmailId}</th>
+                    <td class="row-field">
+                        <input type="text" class="input-big" data-dojo-type="dijit/form/ValidationTextBox"
+                               data-dojo-props="validator:${_optionalEmail}"/>
+                    </td>
+                </tr>
+                <tr>
+                    <th class="row-label">${i18n.yourPhone}</th>
+                    <td class="row-field">
+                        <table id="your-phone">
+                            <thead>
+                                <tr>
+                                    <th class="country-code">${i18n.countryCode}</th>
+                                    <th class="city-code">${i18n.cityCode}</th>
+                                    <th>${i18n.phoneNumber}</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><input type="text" data-dojo-type="dijit/form/TextBox"/> -</td>
+                                    <td><input type="text" data-dojo-type="dijit/form/TextBox"/> -</td>
+                                    <td><input type="text" data-dojo-type="dijit/form/TextBox"/></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                <tr class="postal-address">
+                    <th class="row-label"><em class="required">*</em>${i18n.yourPostalAddress}</th>
+                    <td class="row-field">
+                        <textarea rows="3" data-dojo-type="example/form/ValidationTextArea" 
+                                  data-dojo-props="required:true"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <th class="row-label"><em class="required">*</em>${i18n.country}</th>
+                    <td class="row-field">
+                        <select data-dojo-type="dijit/form/Select" data-dojo-props="required:true">
+                            <option value="">---------------- ${i18n.selectOne} ----------------<option>
+                            <option value="USA">USA</option>
+                            <option value="Cuba">Cuba</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th class="row-label"><em class="required">*</em>${i18n.password}</th>
+                    <td class="row-field">
+                        <input type="password" class="input-default" data-dojo-type="dijit/form/ValidationTextBox" 
+                               data-dojo-props="required:true"/>
+                    </td>
+                </tr>
+                <tr>
+                    <th class="row-label"><em class="required">*</em>${i18n.reEnterPassword}</th>
+                    <td class="row-field">
+                        <input type="password" class="input-default" data-dojo-type="dijit/form/ValidationTextBox" 
+                               data-dojo-props="required:true"/>
+                    </td>
+                </tr>
+                <tr>
+                    <th></th>
+                    <td class="row-field">
+                        <div data-dojo-type="dijit.form.CheckBox">
+                            <script type="dojo/on" data-dojo-event="click">
+                                dijit.byId("submitBtn").set('disabled', !this.checked);
+                            </script>
+                        </div> <b>${i18n.iAcceptThe} <a href="#">${i18n.termsOfUse}</a></b>
+                    </td>
+                </tr>
+                <tr>
+                    <th></th>
+                    <td class="row-field actions">
+                        <button id="submitBtn" type="submit" data-dojo-type="dijit/form/Button" 
+                                data-dojo-props="disabled:true">${i18n.lContinue} >></button>
+                        <button type="reset" data-dojo-type="dijit/form/Button">${i18n.reset}</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+</div>
