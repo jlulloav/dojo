@@ -94,10 +94,16 @@ select{
     display: inline-block;
 }
 .your-phone .country-code .dijitTextBox{
-    width: 62px;
+    width: 60px;
 }
 .your-phone .city-code .dijitTextBox{
-    width: 44px;
+    width: 65px;
+}
+.your-phone .phone-number .dijitTextBox{
+    width: 100%;
+}
+.your-phone .labels label {
+    display: block;
 }
 #lang-swap{
     margin: auto;

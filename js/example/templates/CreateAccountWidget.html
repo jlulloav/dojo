@@ -33,15 +33,19 @@
             <div class="fieldset-row your-phone">
                 <div class="row-label">${i18n.yourPhone}</div>
                 <div class="row-field">
-                    <ul class="labels">
-                        <li>${i18n.countryCode} -</li>
-                        <li>${i18n.cityCode} -</li>
-                        <li>${i18n.phoneNumber}</li>
-                    </ul>
-                    <ul class="phone-fields">
-                        <li class="country-code"><input type="text" data-dojo-type="dijit/form/TextBox"/> -</li>
-                        <li class="city-code"><input type="text" data-dojo-type="dijit/form/TextBox"/> -</li>
-                        <li><input type="text" data-dojo-type="dijit/form/TextBox"/></li>
+                    <ul class="labels phone-fields">
+                        <li class="country-code">
+                            <label>${i18n.countryCode}</label>
+                            <input type="text" data-dojo-type="dijit/form/TextBox"/> -
+                        </li>
+                        <li class="city-code">
+                            <label>${i18n.cityCode}</label>
+                            <input type="text" data-dojo-type="dijit/form/TextBox"/> -
+                        </li>
+                        <li class="phone-number">
+                            <label>${i18n.phoneNumber}</label>
+                            <input type="text" data-dojo-type="dijit/form/TextBox"/>
+                        </li>
                     </ul>
                 </div>
             </div>

@@ -1,8 +1,5 @@
 define("example/nls/en/CreateAccountWidget",
 ({
-	invalidMessage: "El valor especificado no es válido.",
-	missingMessage: "Este valor es necesario.",
-	rangeMessage: "Este valor está fuera del intervalo.",
 	formTitle: "Register - Create Account",
 	fieldMarkedWith: 'Field marked with',
 	areCompulsoryFields: 'are compulsory fields.',
