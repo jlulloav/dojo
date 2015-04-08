@@ -6,8 +6,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <title>Example</title>
-        <!--<link href="js/dijit/themes/claro/claro.css" type="text/css" rel="stylesheet"/>-->
-        <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/dojo/1.10.4/dijit/themes/claro/claro.css" media="screen"/>
+        <link href="js/dijit/themes/claro/claro.css" type="text/css" rel="stylesheet"/>
+        <!--<link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/dojo/1.10.4/dijit/themes/claro/claro.css" media="screen"/>-->
         <link href="style.css" rel="stylesheet" type="text/css">
     </head>
 
@@ -15,64 +15,10 @@
         <div id="lang-swap">
             <a href="?es">Español</a> <a href="?en">English</a>
         </div>
-        <div data-dojo-type="CreateAccountWidget"></div>
-        <script type="text/javascript">
-            dojoConfig = {
-                isDebug: true,
-                packages: [{
-                        name: 'example',
-                        location: location.pathname.replace(/\/[^/]+$/, '') + 'js/example'
-                    }]
-            };
-            var lang = window.location.search.replace('?', '');
-            if (lang) {
-                dojoConfig.locale = lang;
-            }
-        </script>
-        <!--<script type="text/javascript" src="js/dojo/dojo.js.uncompressed.js"></script>-->
-        <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/dojo/1.10.4/dojo/dojo.js.uncompressed.js"></script>
-        <script type="text/javascript">
-            require([
-                "dojo/_base/declare",
-                "dojo/parser",
-                "dojo/ready",
-                "dijit/_WidgetBase",
-                "dijit/_TemplatedMixin",
-                "dijit/_WidgetsInTemplateMixin",
-                "dojo/i18n!example/nls/CreateAccountWidget",
-                "dojo/text!example/templates/CreateAccountWidget.html",
-                "dijit/form/Form",
-                "dijit/form/Button",
-                "dijit/form/TextBox",
-                'dijit/form/CheckBox',
-                'dijit/form/Select',
-                'dijit/form/ValidationTextBox',
-                "example/form/ValidationTextArea",
-                "dojox/validate/web"
-            ], function (declare, parser, ready, _WidgetBase, _TemplatedMixin, _WidgetsInTemplateMixin, i18n, template) {
-                declare("CreateAccountWidget", [_WidgetBase, _TemplatedMixin, _WidgetsInTemplateMixin], {
-                    i18n: i18n,
-                    templateString: template,
-                    /**
-                     * Validate an optional email address field
-                     * 
-                     * @param string value
-                     * @param  object constraints
-                     * @returns Boolean
-                     */
-                    _optionalEmail: function (value, constraints) {
-                        if (value === '') {
-                            return true;
-                        }
-                        return dojox.validate.isEmailAddress(value, constraints);
-                    }
-                });
-
-                ready(function () {
-                    parser.parse();
-                });
-
-            });
-        </script>
+        <div data-dojo-type="example/CreateAccountWidget"></div>
+        <script type="text/javascript" src="js/example/config.js"></script>
+        <script type="text/javascript" src="js/dojo/dojo.js.uncompressed.js"></script>
+        <!--<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/dojo/1.10.4/dojo/dojo.js.uncompressed.js"></script>-->
+        <script type="text/javascript" src="js/example/app.js"></script>
     </body>
 </html>

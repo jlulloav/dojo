@@ -57,10 +57,8 @@
             <div class="fieldset-row">
                 <div class="row-label"><em class="required">*</em>${i18n.country}</div>
                 <div class="row-field">
-                    <select data-dojo-type="dijit/form/Select" data-dojo-props="required:true">
+                    <select id="countrySelect" data-dojo-type="dijit/form/Select" data-dojo-props="labelAttr:'name', required:true">
                         <option value="">---------------- ${i18n.selectOne} ----------------<option>
-                        <option value="USA">USA</option>
-                        <option value="Cuba">Cuba</option>
                     </select>
                 </div>
             </div>
