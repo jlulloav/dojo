@@ -25,7 +25,7 @@ ul{
     margin: 40px auto;
     background: #F4FAFB;
     border: 2px solid #E3F1EB;
-    padding: 0 10px;
+    padding: 0 10px 10px;
 }
 .required{
     color: red;
@@ -35,9 +35,16 @@ ul{
     background: #E4F2EC;
     padding: 3px;
 }
-
+#accept-terms{
+    vertical-align: sub;
+}
+.fieldset-row{
+    margin-bottom: 7px;
+    position: relative;
+    overflow: hidden;
+}
 .row-label{
-    font-weight: normal;
+    float:left;
     width: 170px;
     background: #E4F2EC;
     text-align: right;
@@ -45,7 +52,8 @@ ul{
     color: #54927C;
 }
 .row-field{
-    padding-left: 10px;
+    margin-left: 190px;
+    padding-top: 4px;
 }
 
 input[type="text"],input[type="password"],input[type="email"],select,textarea{
@@ -66,8 +74,29 @@ select{
     width: auto!important;
 }
 .postal-address .row-field textarea{
-    height: auto!important;
+    height: 62px!important;
     width: 60%;
+}
+.postal-address .row-label{
+    height: 40px;
+    padding-top: 30px;
+}
+.your-phone .row-label{
+    height: 23px;
+    padding-top: 11px;
+}
+.your-phone .labels{
+    color: #54927C;
+    font-size: 10px;
+}
+.your-phone li {
+    display: inline-block;
+}
+.your-phone .country-code .dijitTextBox{
+    width: 62px;
+}
+.your-phone .city-code .dijitTextBox{
+    width: 44px;
 }
 #lang-swap{
     margin: auto;
@@ -75,50 +104,11 @@ select{
     width: 600px;
     top:35px;
 }
-
-/* Form Table*/
-table.fieldset-table{
-    width: 100%;
-    border-spacing: 0 4px;
-}
-table.fieldset-table b{
-    vertical-align: sub;
-}
-table.fieldset-table .actions{
-    height: 50px;
-}
-
-#your-phone th {
-    color: #54927C;
-    font-size: 10px;
-    font-weight: normal;
-    text-align: left;
-}
-#your-phone .dijitTextBox {
-    width: 85%;
-}
-.en #your-phone th.country-code{
-    width: 75px;
-}
-.en #your-phone th.city-code{
-    width: 65px;
-}
-.es #your-phone th.country-code {
-    width: 88px;
-}
-.es #your-phone th.city-code {
-    width: 117px;
-}
-#your-phone td span{
-    float: right;
-    margin-right: 2px;
-}
-/* END Form Table*/
 .clearfix:before,
 .clearfix:after {
-    content: " ";
-    display: table;
+  content: " ";
+  display: table;
 }
 .clearfix:after {
-    clear: both;
+  clear: both;
 }
