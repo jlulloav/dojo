@@ -1,6 +1,7 @@
 define("example/nls/en/CreateAccountWidget",
 ({
 	formTitle: "Register - Create Account",
+    confirmTitle: "Confirm - Crear Cuenta",
 	fieldMarkedWith: 'Field marked with',
 	areCompulsoryFields: 'are compulsory fields.',
 	username: 'Username',
@@ -18,6 +19,7 @@ define("example/nls/en/CreateAccountWidget",
 	iAcceptThe: 'I accept the',
 	termsOfUse: 'Terms of use',
 	lContinue: 'Continue',
-	reset: 'Reset'
+	reset: 'Reset',
+	lBack: 'Back'
 })
 );

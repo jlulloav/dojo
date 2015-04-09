@@ -4,6 +4,7 @@ define("example/nls/es/CreateAccountWidget",
 	missingMessage: "Este valor es necesario.",
 	rangeMessage: "Este valor está fuera del intervalo.",
 	formTitle: "Registrarse - Crear Cuenta",
+	confirmTitle: "Confirmar - Crear Cuenta",
 	fieldMarkedWith: 'Campos marcados con',
 	areCompulsoryFields: 'son requeridos.',
 	username: 'Nombre de usuario',
@@ -21,6 +22,7 @@ define("example/nls/es/CreateAccountWidget",
 	iAcceptThe: 'Accepto los',
 	termsOfUse: 'Términos de uso',
 	lContinue: 'Continuar',
-	reset: 'Cancelar'
+	reset: 'Cancelar',
+    lBack: 'Regresar'
 })
 );
