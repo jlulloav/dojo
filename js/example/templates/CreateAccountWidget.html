@@ -73,7 +73,7 @@
             <div class="fieldset-row no-confirmation">
                 <div class="row-label"><em class="required">*</em>${i18n.password}</div>
                 <div class="row-field">
-                    <input type="password" class="input-default" data-dojo-type="dijit/form/ValidationTextBox" 
+                    <input id="password" type="password" class="input-default" data-dojo-type="dijit/form/ValidationTextBox" 
                            data-dojo-props="required:true"/>
                 </div>
             </div>
@@ -82,7 +82,7 @@
                 <div class="row-label"><em class="required">*</em>${i18n.reEnterPassword}</div>
                 <div class="row-field">
                     <input type="password" class="input-default" data-dojo-type="dijit/form/ValidationTextBox" 
-                           data-dojo-props="required:true"/>
+                           data-dojo-props="required:true,validator:${_validateConfirmPassw}"/>
                 </div>
             </div>
             

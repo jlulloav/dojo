@@ -45,6 +45,24 @@ define([
             return dojox.validate.isEmailAddress(value, constraints);
         },
         /**
+         * Validate that the 2 password fields are equals
+         * 
+         * @param {string} value
+         * @param {object} constraints
+         * @returns {Boolean}
+         */
+        _validateConfirmPassw : function(value, constraints){
+            if (value === '') {
+                return false;
+            }
+            var query = require("dojo/query");
+            var psw1 = query('#password')[0];
+            if(!psw1){
+                return false;
+            }
+            return psw1.value === value;
+        },
+        /**
          * Set the store to the Countries Combobox
          * 
          * @returns {void}
