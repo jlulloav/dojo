@@ -1,0 +1,111 @@
+
+<div id="idCustomFormInput">
+	<div class="title-form-app" data-dojo-attach-point="lbRegAccount"></div>
+	<div class="msg-form-app" data-dojo-attach-point="lbCompulsoryFields"></div>
+
+	<div data-dojo-type="dijit/form/Form" id="myForm" data-dojo-id="myForm"
+		 encType="multipart/form-data" action="" method="">
+	<table cellpadding="0" cellspacing="0" class="table-form-app">
+		<tr>
+			<td class="td-label"><div class= "div-label-ini" data-dojo-attach-point="lbUserName"></div></td>
+			<td>
+				<div style="padding-top: 5px; margin-top: 10px">
+					<div class="input-form-app"> <input data-dojo-attach-point="userName"/> </div>
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td class="td-label"><div class= "div-label-middle" data-dojo-attach-point="lbEmail"></div></td>
+			<td>
+				<div class="input-form-app"> <input data-dojo-attach-point="email"/> </div>
+			</td>
+		</tr>
+		<tr>
+			<td class="td-label"><div class= "div-label-middle" data-dojo-attach-point="lbAlterEmail"></div></td>
+			<td>
+				<div class="input-form-app"> <input data-dojo-attach-point="alterEmail"/> </div>
+			</td>
+		</tr>
+		<tr cellspacing="0">
+			<td class="td-label"><div class= "div-label-middle" data-dojo-attach-point="lbPhone"></div></td>
+			<td align="center">
+				<table cellspacing="2" cellpadding="2" border="0" align="left">
+					<tr>
+						<td><div class="div-tiny-label" data-dojo-attach-point="lbCountryCode"></div></td>
+						<td><label> </label></td>
+						<td><div class="div-tiny-label" data-dojo-attach-point="lbCityCode"></div></td>
+						<td><label> </label></td>
+						<td><div class="div-tiny-label" data-dojo-attach-point="lbPhoneNumber"></div></td>
+					</tr>
+					<tr>
+						<td>
+							<div class="input-form-app"> <input type="text" id="idCountryCode" size="8"/> </div>
+						</td>
+						<td> - </td>
+						<td>
+							<div class="input-form-app"> <input type="text" id="idCityCode" size="6"/> </div>
+						</td>
+						<td> - </td>
+						<td>
+							<div class="input-form-app"> <input type="text" id="idPhoneNumber" size="10"/> </div>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td class="td-label">
+				<div class= "div-label-textare" data-dojo-attach-point="lbPostalAdress"></div>
+			</td>
+			<td>
+				<div class="input-form-app"> <div data-dojo-attach-point="addresPostal"></div> </div>
+			</td>
+		</tr>
+		<tr>
+			<td class="td-label">
+				<div class= "div-label-middle" data-dojo-attach-point="lbCountry"></div>
+			</td>
+			<td>
+				<div class="input-form-app"> <input data-dojo-attach-point="countryInput"/> </div>
+			</td>
+		</tr>
+
+		<tr>
+			<td class="td-label">
+				<div class= "div-label-middle" data-dojo-attach-point="lbPassword"></div>
+			</td>
+			<td>
+				<input data-dojo-attach-point="password"/>
+			</td>
+		</tr>
+		<tr>
+			<td class="td-label">
+				<div class= "div-label-middle" data-dojo-attach-point="lbRepeatPassword"></div>
+			</td>
+			<td>
+				<input data-dojo-attach-point="repeatPassword"/>
+			</td>
+		</tr>
+		<tr>
+			<td> </td>
+			<td>
+				<div id="idValTerms" style="height: 17px; width: 180px;">
+					<!--<input id="idTerms" name="terms" data-dojo-type="dijit/form/CheckBox" style="position: absolute" />-->
+					<input data-dojo-attach-point="termsUse" />
+					<div data-dojo-attach-point="lbTermsUse" style="padding-left: 20px; padding-top: 3px"></div>
+				</div>
+				<div id="idMsgTermsVal" data-dojo-attach-point="idMsgTermsVal"> </div>
+			</td>
+		</tr>
+		<tr>
+			<td> </td>
+			<td>
+				<div style="height: 40px; margin-top: 10px">
+					<button data-dojo-attach-point="submitContinue"></button>
+					<button data-dojo-attach-point="submitReset"></button>
+				</div>
+			</td>
+		</tr>
+	</table>
+	</div>
+</div>

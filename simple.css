@@ -1,0 +1,115 @@
+@CHARSET "UTF-8";
+@import url("js/dojo/resources/dojo.css");
+@import url("js/dijit/themes/claro/claro.css");
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    overflow:hidden;
+}
+.contentFormMain{
+    width: 100%;
+    height: 650px;
+}
+#borderContainerMain {
+    width: 100%;
+    height: 80%;
+    /*top: 50px;*/
+    padding-top: 2%;
+    padding-left: 30%;
+    padding-right: 20%;
+}
+.msg-form-app{
+    border-style: dotted;
+    border-color: #008800;
+    border-width: 1px;
+    background-color: #E4F2EC;
+    margin-right: 15px;
+    margin-left: 15px;
+    padding: 3px;
+}
+.asterisk-form-app{
+    color: red;
+}
+.table-form-app{
+    width: 500px;
+    border-width: 1px;
+}
+.div-form-app{
+    background-color: #F4FAFB;
+    border: 2px solid #E3F1EB;
+}
+.title-form-app{
+    color: #54927C;
+    font-size: 2.0em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    margin-left: 15px;
+}
+.td-label{
+    /*background-color: #E3F1EB;*/
+    width: 180px;
+    height: 30px;
+}
+.div-label-ini{
+    font-size: 1.0em;
+    /*float: right;*/
+    color: #54927C;
+    background-color: #E3F1EB;
+    width: 180px;
+    height: 20px;
+    text-align: right;
+    vertical-align: middle;
+    margin: 15px 15px 0px 15px;
+    padding-top: 5px;
+    padding-bottom: 0px;
+    padding-right: 10px;
+
+}
+.div-label-middle{
+    font-size: 1.0em;
+    float: right;
+    color: #54927C;
+    background-color: #E3F1EB;
+    width: 180px;
+    height: 20px;
+    text-align: right;
+    vertical-align: middle;
+    margin: 5px 15px 0px 15px;
+    padding-top: 5px;
+    padding-bottom: 0px;
+    padding-right: 10px;
+}
+.div-label-textare{
+    font-size: 1.0em;
+    float: right;
+    color: #54927C;
+    background-color: #E3F1EB;
+    width: 180px;
+    height: 40px;
+    text-align: right;
+    vertical-align: middle;
+    margin: 5px 15px 0px 15px;
+    padding-top: 23px;
+    padding-bottom: 0px;
+    padding-right: 10px;
+}
+.div-tiny-label{
+    font-size: 0.8em;
+    color: #54927C;
+}
+
+.phone-out-form-app{
+    border: 1px solid #006600;
+    height: 13px;
+    text-align: center;
+    padding-top: 5px;
+}
+.dijitButtonText{
+    padding: 0 0.3em;
+    text-align: center;
+    height: 15px;
+    vertical-align: middle;
+    line-height: 1.5;
+}
