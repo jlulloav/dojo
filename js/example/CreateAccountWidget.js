@@ -162,9 +162,7 @@ define([
             this.emailInput.validator = validateWeb.isEmailAddress;
             this.confirmPasswordInput.validator = lang.hitch(this, this._validateConfirmPassw);
 
-            var accountForm = registry.byId('accountForm');
             on(this.continueBtn, 'click', lang.hitch(this, this._onContinueClick));
-            on(accountForm, 'submit', this._confirm);
             on(this.termsOfUse, 'click', lang.hitch(this, this._acceptTermsOfUse));
             on(this.backBtn, 'click', lang.hitch(this, this._goBack));
             on(this.sameAsBilling, 'click', lang.hitch(this, this._onSameAsBillingClick));
