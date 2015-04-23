@@ -113,6 +113,11 @@ select{
     margin: auto;
     width: 624px;
 }
+.row-title .row-label{
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+}
 .clearfix:before,
 .clearfix:after {
   content: " ";
