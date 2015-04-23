@@ -5,6 +5,7 @@ define("example/nls/en/CreateAccountWidget",
 	fieldMarkedWith: 'Field marked with',
 	areCompulsoryFields: 'are compulsory fields.',
 	username: 'Username',
+	accountInfo: 'Account Information',
 	name: 'Name',
 	emailId: 'E-Mail ID',
 	alternativeEmailId: 'Alternative E-Mail ID',
@@ -28,6 +29,7 @@ define("example/nls/en/CreateAccountWidget",
 	termsOfUse: 'Terms of use',
 	lContinue: 'Continue',
 	reset: 'Reset',
+	congratulations: 'Congratulations',
 	lBack: 'Back'
 })
 );
