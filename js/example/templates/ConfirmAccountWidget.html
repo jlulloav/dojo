@@ -1,0 +1,128 @@
+<div class="main">
+    <h3>${i18n.confirmTitle}</h3>
+    <div id="confirmAccount">
+        <div class="fieldset-wrapper ${i18n.$locale}">
+            <div class="fieldset-row">
+                <div class="row-label">${i18n.name}</div>
+                <div class="row-field">
+                    <label class="field-value">${account.name}</label>
+                </div>
+            </div>
+            <div class="fieldset-row">
+                <div class="row-label">${i18n.username}</div>
+                <div class="row-field">
+                    <label class="field-value">${account.username}</label>
+                </div>
+            </div>
+
+            <div class="fieldset-row">
+                <div class="row-label">${i18n.emailId}</div>
+                <div class="row-field">
+                    <label class="field-value">${account.email}</label>
+                </div>
+            </div>
+
+            <div class="fieldset-row">
+                <div class="row-label">${i18n.alternativeEmailId}</div>
+                <div class="row-field">
+                    <label class="field-value">${account.alternativeEmail}</label>
+                </div>
+            </div>
+
+            <div class="fieldset-row">
+                <div class="row-label">${i18n.yourPhone}</div>
+                <div class="row-field">
+                    <label class="field-value">${account.countryCode} ${account.cityCode} ${account.phoneNumber}</label>
+                </div>
+            </div>
+
+            <div class="fieldset-row">
+                <div class="row-label">${i18n.country}</div>
+                <div class="row-field">
+                    <label class="field-value">${account.countryId}</label>
+                </div>
+            </div>
+            
+            <div class="fieldset-row row-title">
+                <div class="row-label">${i18n.yourPostalAddress}</div>
+            </div>
+            <div class="fieldset-row">
+                <div class="row-label">${i18n.address}</div>
+                <div class="row-field">
+                    <label class="field-value">${account.shippingAddress}</label>
+                </div>
+            </div>
+            <div class="fieldset-row">
+                <div class="row-label">${i18n.secondaryAddress}</div>
+                <div class="row-field">
+                    <label class="field-value">${account.shippingSecondaryAddress}</label>
+                </div>
+            </div>
+            <div class="fieldset-row">
+                <div class="row-label">${i18n.city}</div>
+                <div class="row-field">
+                    <label class="field-value">${account.shippingCity}</label>
+                </div>
+            </div>
+            <div class="fieldset-row">
+                <div class="row-label">${i18n.state}</div>
+                <div class="row-field">
+                    <label class="field-value">${account.shippingState}</label>
+                </div>
+            </div>
+            <div class="fieldset-row">
+                <div class="row-label">${i18n.zip}</div>
+                <div class="row-field">
+                    <label class="field-value">${account.shippingZip}</label>
+                </div>
+            </div>
+            
+            <div class="fieldset-row row-title">
+                <div class="row-label">${i18n.yourBillingAddress}</div>
+            </div>
+            
+            <div class="fieldset-row">
+                <div class="row-label">${i18n.name}</div>
+                <div class="row-field">
+                    <label class="field-value">${account.billingName}</label>
+                </div>
+            </div>
+            <div class="fieldset-row">
+                <div class="row-label">${i18n.address}</div>
+                <div class="row-field">
+                    <label class="field-value">${account.billingAddress}</label>
+                </div>
+            </div>
+            <div class="fieldset-row">
+                <div class="row-label">${i18n.secondaryAddress}</div>
+                <div class="row-field">
+                    <label class="field-value">${account.billingSecondaryAddress}</label>
+                </div>
+            </div>
+            <div class="fieldset-row">
+                <div class="row-label">${i18n.city}</div>
+                <div class="row-field">
+                    <label class="field-value">${account.billingCity}</label>
+                </div>
+            </div>
+            <div class="fieldset-row">
+                <div class="row-label">${i18n.state}</div>
+                <div class="row-field">
+                    <label class="field-value">${account.billingState}</label>
+                </div>
+            </div>
+            <div class="fieldset-row">
+                <div class="row-label">${i18n.zip}</div>
+                <div class="row-field">
+                    <label class="field-value">${account.billingZip}</label>
+                </div>
+            </div>
+            <div class="fieldset-row">
+                <div class="row-field actions">
+                    <button data-dojo-attach-point="confirmBtn" type="button" data-dojo-type="dijit/form/Button">${i18n.lContinue}</button>
+                    <button data-dojo-attach-point="backBtn" type="button" data-dojo-type="dijit/form/Button">${i18n.lBack}</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
