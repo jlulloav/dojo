@@ -1,6 +1,5 @@
 <div class="main">
     <h3>${i18n.formTitle}</h3>
-    <h3 class="dijitHidden">${i18n.confirmTitle}</h3>
     <p class="tip">${i18n.fieldMarkedWith} <em class="required"> * </em> ${i18n.areCompulsoryFields}</p>
     <form id="accountForm" data-dojo-type="dijit/form/Form" method="post" action="">
         <div class="fieldset-wrapper ${i18n.$locale}">
@@ -8,18 +7,11 @@
                 <div class="fieldset-row">
                     <div class="row-label"><em class="required"> * </em>${i18n.name}</div>
                     <div class="row-field">
-                        <input name="name" type="text" data-dojo-type="dijit/form/ValidationTextBox" 
+                        <input data-dojo-attach-point="shippingName" name="name" type="text" data-dojo-type="dijit/form/ValidationTextBox" 
                                data-dojo-props="required:true"/>
                     </div>
                 </div>
-                <div class="fieldset-row">
-                    <div class="row-label"><em class="required"> * </em>${i18n.username}</div>
-                    <div class="row-field">
-                        <input name="username" type="text" data-dojo-type="dijit/form/ValidationTextBox" 
-                               data-dojo-props="required:true"/>
-                    </div>
-                </div>
-
+                
                 <div class="fieldset-row">
                     <div class="row-label"><em class="required"> * </em>${i18n.emailId}</div>
                     <div class="row-field">
@@ -58,47 +50,6 @@
                 </div>
 
                 <div class="fieldset-row">
-                    <div class="row-label">${i18n.yourPostalAddress}</div>
-                    <div class="row-field">
-                        <input type="checkbox" data-dojo-type="dijit.form.CheckBox"/>
-                        <b>${i18n.contactInfoSameAsBilling}</b>
-                    </div>
-                </div>
-                <div class="fieldset-row">
-                    <div class="row-label"><em class="required"> * </em>${i18n.address}</div>
-                    <div class="row-field">
-                        <input name="shippingAddress" type="text" data-dojo-type="dijit/form/ValidationTextBox" 
-                               data-dojo-props="required:true"/>
-                    </div>
-                </div>
-                <div class="fieldset-row">
-                    <div class="row-label">${i18n.secondaryAddress}</div>
-                    <div class="row-field">
-                        <input name="shippingSecondaryAddress" type="text" data-dojo-type="dijit/form/TextBox"/>
-                    </div>
-                </div>
-                <div class="fieldset-row">
-                    <div class="row-label"><em class="required"> * </em>${i18n.city}</div>
-                    <div class="row-field">
-                        <input name="shippingCity" type="text" data-dojo-type="dijit/form/ValidationTextBox" 
-                               data-dojo-props="required:true"/>
-                    </div>
-                </div>
-                <div class="fieldset-row">
-                    <div class="row-label"><em class="required"> * </em>${i18n.state}</div>
-                    <div class="row-field">
-                        <input name="shippingState" type="text" data-dojo-type="dijit/form/ValidationTextBox" 
-                               data-dojo-props="required:true"/>
-                    </div>
-                </div>
-                <div class="fieldset-row">
-                    <div class="row-label"><em class="required"> * </em>${i18n.zip}</div>
-                    <div class="row-field">
-                        <input name="shippingZip" type="text" data-dojo-type="dijit/form/ValidationTextBox" 
-                               data-dojo-props="required:true"/>
-                    </div>
-                </div>
-                <div class="fieldset-row">
                     <div class="row-label"><em class="required"> * </em>${i18n.country}</div>
                     <div class="row-field">
                         <select id="countryId" name="countryId" data-dojo-type="example/CountrySelector" 
@@ -109,7 +60,57 @@
                         </select>
                     </div>
                 </div>
+                
+                <div class="fieldset-row row-title">
+                    <div class="row-label">${i18n.yourPostalAddress}</div>
+                </div>
+                <div class="fieldset-row">
+                    <div class="row-label"><em class="required"> * </em>${i18n.address}</div>
+                    <div class="row-field">
+                        <input data-dojo-attach-point="shippingAddress" name="shippingAddress" type="text" data-dojo-type="dijit/form/ValidationTextBox" 
+                               data-dojo-props="required:true"/>
+                    </div>
+                </div>
+                <div class="fieldset-row">
+                    <div class="row-label">${i18n.secondaryAddress}</div>
+                    <div class="row-field">
+                        <input data-dojo-attach-point="shippingSecondaryAddress" name="shippingSecondaryAddress" type="text" data-dojo-type="dijit/form/TextBox"/>
+                    </div>
+                </div>
+                <div class="fieldset-row">
+                    <div class="row-label"><em class="required"> * </em>${i18n.city}</div>
+                    <div class="row-field">
+                        <input data-dojo-attach-point="shippingCity" name="shippingCity" type="text" data-dojo-type="dijit/form/ValidationTextBox" 
+                               data-dojo-props="required:true"/>
+                    </div>
+                </div>
+                <div class="fieldset-row">
+                    <div class="row-label"><em class="required"> * </em>${i18n.state}</div>
+                    <div class="row-field">
+                        <input data-dojo-attach-point="shippingState" name="shippingState" type="text" data-dojo-type="dijit/form/ValidationTextBox" 
+                               data-dojo-props="required:true"/>
+                    </div>
+                </div>
+                <div class="fieldset-row">
+                    <div class="row-label"><em class="required"> * </em>${i18n.zip}</div>
+                    <div class="row-field">
+                        <input data-dojo-attach-point="shippingZip" name="shippingZip" type="text" data-dojo-type="dijit/form/ValidationTextBox" 
+                               data-dojo-props="required:true"/>
+                    </div>
+                </div>
 
+                <div class="fieldset-row row-title">
+                    <div class="row-label">${i18n.accountInfo}</div>
+                </div>
+                
+                <div class="fieldset-row">
+                    <div class="row-label"><em class="required"> * </em>${i18n.username}</div>
+                    <div class="row-field">
+                        <input name="username" type="text" data-dojo-type="dijit/form/ValidationTextBox" 
+                               data-dojo-props="required:true"/>
+                    </div>
+                </div>
+                
                 <div class="fieldset-row">
                     <div class="row-label"><em class="required"> * </em>${i18n.password}</div>
                     <div class="row-field">
@@ -130,28 +131,31 @@
 
                 <div class="fieldset-row">
                     <div class="row-field">
-                        <input type="checkbox" id="termsOfUse" data-dojo-type="dijit.form.CheckBox"/>
+                        <input type="checkbox" data-dojo-attach-point="termsOfUse" data-dojo-type="dijit.form.CheckBox"/>
                         <b id="accept-terms">${i18n.iAcceptThe} <a href="#">${i18n.termsOfUse}</a></b>
                     </div>
                 </div>
             </div>
-            
-            <div class="screen2 dijitHidden">
-                <div class="fieldset-row">
-                    <div class="row-label">${i18n.yourBillingAddress}</div>
+
+            <div class="fieldset-row screen2 dijitHidden">
+                <div class="row-label">${i18n.yourBillingAddress}</div>
+                <div class="row-field">
+                    <input data-dojo-attach-point="sameAsBilling" name="sameAsBilling" type="checkbox" data-dojo-type="dijit.form.CheckBox"/>
+                    <b>${i18n.contactInfoSameAsBilling}</b>
                 </div>
+            </div>
+
+            <div id="screen2" class="screen2 dijitHidden">
                 <div class="fieldset-row">
                     <div class="row-label"><em class="required"> * </em>${i18n.name}</div>
                     <div class="row-field">
-                        <input name="billingName" type="text" data-dojo-type="dijit/form/ValidationTextBox" 
-                               data-dojo-props="required:true"/>
+                        <input name="billingName" type="text" data-dojo-type="dijit/form/ValidationTextBox"/>
                     </div>
                 </div>
                 <div class="fieldset-row">
                     <div class="row-label"><em class="required"> * </em>${i18n.address}</div>
                     <div class="row-field">
-                        <input name="billingAddress" type="text" data-dojo-type="dijit/form/ValidationTextBox" 
-                               data-dojo-props="required:true"/>
+                        <input name="billingAddress" type="text" data-dojo-type="dijit/form/ValidationTextBox"/>
                     </div>
                 </div>
                 <div class="fieldset-row">
@@ -163,22 +167,19 @@
                 <div class="fieldset-row">
                     <div class="row-label"><em class="required"> * </em>${i18n.city}</div>
                     <div class="row-field">
-                        <input name="billingCity" type="text" data-dojo-type="dijit/form/ValidationTextBox" 
-                               data-dojo-props="required:true"/>
+                        <input name="billingCity" type="text" data-dojo-type="dijit/form/ValidationTextBox"/>
                     </div>
                 </div>
                 <div class="fieldset-row">
                     <div class="row-label"><em class="required"> * </em>${i18n.state}</div>
                     <div class="row-field">
-                        <input name="billingState" type="text" data-dojo-type="dijit/form/ValidationTextBox" 
-                               data-dojo-props="required:true"/>
+                        <input name="billingState" type="text" data-dojo-type="dijit/form/ValidationTextBox"/>
                     </div>
                 </div>
                 <div class="fieldset-row">
                     <div class="row-label"><em class="required"> * </em>${i18n.zip}</div>
                     <div class="row-field">
-                        <input name="billingZip" type="text" data-dojo-type="dijit/form/ValidationTextBox" 
-                               data-dojo-props="required:true"/>
+                        <input name="billingZip" type="text" data-dojo-type="dijit/form/ValidationTextBox"/>
                     </div>
                 </div>
             </div>
@@ -188,8 +189,8 @@
                     <button id="continueBtn" type="button" data-dojo-type="dijit/form/Button" 
                             data-dojo-attach-point="continueBtn"
                             data-dojo-props="disabled:true">${i18n.lContinue} >></button>
-                    <button type="reset" data-dojo-type="dijit/form/Button">${i18n.reset}</button>
-                    <button id="backBtn" type="button" class="dijitHidden" data-dojo-type="dijit/form/Button">${i18n.lBack}</button>
+                    <button data-dojo-attach-point="resetBtn" class="screen1" type="reset" data-dojo-type="dijit/form/Button">${i18n.reset}</button>
+                    <button data-dojo-attach-point="backBtn" type="button" class="screen2 dijitHidden" data-dojo-type="dijit/form/Button">${i18n.lBack}</button>
                 </div>
             </div>
         </div>

@@ -257,7 +257,7 @@ define(["dojo/_base/declare",
             ]
         });
 
-        return declare("example/CountrySelector", [FilteringSelect, ValidationTextBox], {
+        return declare("example.CountrySelector", [FilteringSelect, ValidationTextBox], {
             constructor: function(params) {
                 this.constraints = {};
                 this.baseClass += ' large-input';
